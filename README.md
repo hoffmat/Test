@@ -7,7 +7,7 @@ Der TK-Excel-Scanner wurde auf Basis der im Verzeichnis /daten/tk_excels abgeleg
 
 Es ist bisher kein Test auf Basis von realen TK-Excels erfolgt. 
 
-Da der DAMA TK-Excel-Scanner Metadaten für den Metadaten Management Hub (MDM Hub) bereitstellen soll und der MDM Hub erst im ersten Halbjahr 2023 konzipiert und umgesetzt wird, müssen die Strukturen und der Inhalte der erzeugten Hub-Dateien noch angepasst werden.
+Da der DAMA TK-Excel-Scanner Metadaten für den Metadaten Management Hub (MDM Hub) bereitstellen soll und der MDM Hub erst im ersten Halbjahr 2023 konzipiert und umgesetzt wird, müssen die Strukturen und Inhalte der erzeugten Hub-Dateien noch angepasst werden.
 </br>
 Außerdem muss ein End-to-End Integrationstest durchgeführt werden (TK-Excel-Scanner -> MDM Hub -> Informatica Enterprise Data Catalog).
 
@@ -20,7 +20,7 @@ Beispiel config.csv:
 </br>
 quellverzeichnis,C:\tmp\datastore\tk_excels\
 
-Beispiel TK-Excel Dateien sind im Verzeichnis /daten/tk_excels abgelegt
+Beispiele für TK-Excel Dateien sind im Verzeichnis /daten/tk_excels abgelegt.
 
 # Ausgangsdaten
 Die Applikation verarbeitet TK-Excel Dateien, extrahiert hieraus Metadaten und stellt diese Metadaten in Form von csv-Dateien zur Verfügung. Die Ausgangsdateien werden in das Zielverzeichnis geschrieben, welches in der Konfigurationsdatei config.csv als Parameter angegeben ist.
@@ -41,16 +41,16 @@ datastore_links.csv	     --> definiert die Abhängigkeiten von Objekten (Objekth
 </br>
 datastore_lineage.csv	   --> legt die Datenflüsse zwischen Objekten fest
 </br>
-datastore_attributes.csv	--> enthält Attribute und Attributwerte, die füe ein Objekt gelten
+datastore_attributes.csv	--> enthält Attribute und Attributwerte, die für ein Objekt gelten
 
 
 # Konfigurationsdatei
 Die Applikation liest beim Programmstart Parameter aus einer Konfigurationsdatei.
 </br>
 Die Konfigurationsdatei muss im csv-Format abgelegt sein. 
-Der Name und der Pfad der Datei sind beim Programmstart als Applikationsparameter angegeben werden.
+Der Name und der Pfad der Datei müssen beim Programmstart als Applikationsparameter übergeben werden.
 
-Parameter werden in der Konfigurationsdatei im Format <parametername>,<parameterwert> angegeben (ohne Quotes)  
+Parameter werden in der Konfigurationsdatei im Format \<parametername>,\<parameterwert> angegeben (ohne Quotes)  
 // am Zeilenanfang wird als Kommentar erkannt  
 Zeilen, die mit * beginnen werden ignoriert
 
@@ -60,7 +60,7 @@ quellverzeichnis	   --> gibt an, wo die TK-Excels abgelegt sind
 </br>
 zielverzeichnis	   --> gibt an, wo die MDM-Hub Dateien und die Logging-Datei abgelegt werden
 </br>  
-attributewhitelist	   --> legt die gültige Attributmenge fest
+attributewhitelist --> legt die gültige Attributmenge fest
 </br>
 attribunamedefaults --> legt die gültige Attributmenge fest, für die Default-Werte gesetzt werden sollen 
 </br>
