@@ -59,7 +59,6 @@ Aktuell werden folgende Parameter verwendet:
 quellverzeichnis	   --> gibt an, wo die TK-Excels abgelegt sind
 </br>
 zielverzeichnis	   --> gibt an, wo die MDM-Hub Dateien und die Logging-Datei abgelegt werden
-</br>  
 attributewhitelist --> legt die gültige Attributmenge fest
 </br>
 attribunamedefaults --> legt die gültige Attributmenge fest, für die Default-Werte gesetzt werden sollen 
