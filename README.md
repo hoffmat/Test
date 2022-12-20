@@ -68,14 +68,15 @@ attributwertdefaults --> legt die gültige Default-Werte für die Default-Attrib
 
 
 # Applikationsausführung
-Die Applikation wird wie folgt aufgerufen:  java -jar \<applikationsname> \<Pfad und Name des Config-Files>
+Die Applikation wird wie folgt aufgerufen:  
+java -jar \<applikationsname> \<Pfad und Name des Config-Files>
  
 Beispielaufruf: java -jar dama-tk-excel-scanner-0.1.0.jar C:\tmp\datastore\config.csv
 
 # Logging des TK-Excel-Scanners
 Der TK-Excel-Scanner prüft, ob ein TK-Excel valide ist. Wenn Fehler oder Warnungen festgestellt werden, dann werden diese in eine datastore_logging.csv geschrieben.
 </br>
-Ziel hierbei ist es, die erkannten Fehler an den entsprechnden Fachbereiche weiterzugeben, damit das entsprechde TK-Excel korrigiert wird.
+Ziel hierbei ist es, die erkannten Fehler an den entsprechenden Fachbereiche weiterzugeben, damit das entsprechende TK-Excel korrigiert wird.
 
 Die Logging-Datei hat folgenden Aufbau:
 
