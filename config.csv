@@ -1,0 +1,24 @@
+*************************************************************************
+*  Konfigurationsfile für die Datastore-Excel Parser                    *
+*  zur Erzeugung von Datastore-Metadaten für den MDM HUB                *
+*                                                                       *
+*  Parameter werden im Format<parametername>,<parameterwert> angegeben  *
+*                                                                       *
+*  // am Zeilenanfang wird als Kommentatr erkannt                       *
+*                                                                       *
+*************************************************************************
+
+// Quellverezichnis in dem die Datastore Excel-Files gesucht werden
+quellverzeichnis,C:\company\ruv\datastore\excels\
+
+// Zielverzeichnis in das die erezugten MDM HUB-Files und die Loggong-Datei geschrieben werden 
+zielverzeichnis,C:\company\ruv\datastore\hub\
+
+// Legt die gültige Attributmenge fest 
+attributewhitelist, Metadaten_Einzelwert.Name#Metadaten_Einzelwert.Geschäftsbezeichnung#Metadaten_Einzelwert.Beschreibung#Metadaten_Einzelwert.R+V-Anwendung#Metadaten_Einzelwert.Status#Metadaten_Einzelwert.URL#Metadaten_Einzelwert.DataStore-Cluster#Metadaten_Liste.Fachlicher Ansprechpartner#Metadaten_Liste.Technischer Ansprechpartner#Metadaten_Liste.Information Assets
+
+// Legt die gültige Attributmenge fest, für die Default-Werte gestztz werden 
+attribunamedefaults,Name#Geschäftsbezeichnung#Beschreibung#Fachlicher Ansprechpartner#Technischer Ansprechpartner#Information Assets#R+V-Anwendung#Status#URL#DataStore-Cluster
+
+// Legt die gültige Default-Werte für die Default-Attribute fest (Null = es wird Defaultwert gesetzt)
+attributwertdefaults,NULL#NULL#NULL#V_Programm_Omnichannel_Datastore_Kernteam#V_Programm_Omnichannel_Datastore_Kernteam#IA 9#APP-4837#aktiv#NULL#NULL
